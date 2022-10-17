@@ -1,0 +1,352 @@
+.feature1 {
+    margin-top: 20px;
+
+    &-text {
+        text-align: center;
+
+        h2 {
+            text-transform: uppercase;
+            font-size: 35px;
+        }
+
+        p {
+            margin: 8px 0;
+        }
+    }
+
+    &-container {
+        width: 85%;
+        margin: auto;
+
+
+
+        .feature1-flex {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            align-items: center;
+            gap: 15px;
+
+            .box1 {
+                padding-top: 10px;
+                min-width: 200px;
+                cursor: pointer;
+
+                a {
+                    color: $dark-color;
+                }
+
+                .rate {
+                    i {
+                        font-size: 13px;
+                    }
+                }
+
+                img {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: contain;
+                    background-color: lighten(rgb(205, 199, 199), 10%);
+                    padding: 35px;
+                    transition: transform 0.2s ease-in;
+
+                    &:hover {
+                        transform: translateY(-7px);
+                        background-color: darken(rgb(233, 223, 223), 2%);
+                    }
+                }
+
+                .feature1-details {
+                    p {
+                        line-height: 1.5;
+                    }
+
+                    button {
+                        @include set-backgound-color($orange-color);
+                        padding: 7px 15px;
+                        margin-top: 10px;
+                        opacity: 0;
+                        font-size: 17px;
+
+                        &:hover {
+                            background-color: lighten($orange-color, 5%);
+                        }
+                    }
+                }
+
+                &:hover button {
+                    opacity: 1;
+                    transition: opacity 500ms ease-in-out;
+                }
+            }
+        }
+
+        .boxes {
+            display: flex;
+            gap: 10px;
+            margin: 20px 0 70px;
+           
+
+            .box {
+                padding: 5px 12px;
+                border: 1px solid #796363;
+                cursor: pointer;
+                
+                &:hover {
+                    @include set-backgound-color($orange-color);
+                }
+            }
+
+            .arrow {
+                font-size: 10px;
+            }
+        }
+    }
+}
+
+//product
+.products-flex {
+    width: 85%;
+    margin: 190px auto 20px;
+    display: flex;
+    justify-content: space-between;
+   
+
+    #select {
+        @include set-backgound-color(lighten(rgb(233, 223, 223), 2%));
+        font-size: 14px;
+    }
+}
+
+.first {
+    margin: 220px 0 60px;
+
+    &-flex {
+        display: flex;
+        width: 70%;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+
+        .img-container {
+            .img {
+                background-color: lighten(rgb(205, 199, 199), 10%);
+                padding: 35px 30px;
+                margin-bottom: 8px;
+
+                img {
+                    width: 300px;
+                    height: 300px;
+                }
+            }
+
+            .imgs {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+
+                img {
+                    background-color: lighten(rgb(205, 199, 199), 10%);
+                    width: 85px;
+                    height: 85px;
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+        }
+
+        .first-product-details {
+            h1 {
+                font-size: 34px;
+            }
+
+            .rate {
+                margin-bottom: 20px;
+            }
+
+            .price {
+                font-size: 18px;
+                margin: 14px 0;
+            }
+
+            select {
+                padding: 4px;
+                background-color: lighten(rgb(205, 199, 199), 10%);
+                font-size: 14px;
+            }
+
+            .first2-flex {
+                margin: 13px 0 40px;
+                display: flex;
+                gap: 10px;
+                align-items: center;
+
+                .input {
+                    border: none;
+                    background-color: lighten(rgb(205, 199, 199), 10%);
+                    width: 50px;
+                    padding: 10px 5px;
+                    color: $dark-color;
+                    border: 1px solid lighten(rgb(120, 116, 116), 10%);
+
+                  
+                    input {
+                        border: none;
+                        width: 100%;
+                        background: none;
+                        text-align: center;
+                        font-size: 16px;
+
+                         &:focus {
+                            outline: none;
+                         }
+                     }
+                }  
+
+                button {
+                    @include set-backgound-color($orange-color);
+                    padding: 8px 18px;
+
+                    a {
+                        color: $White-color;
+                        font-size: 16px;
+                    }
+
+                    &:hover {
+                        background: lighten($orange-color, 5%);
+                    }
+                }
+            }
+
+            .black1 {
+                margin: 20px 0;
+                font-size: 17px;
+            }
+
+            .line {
+                line-height: 1.4;
+            }
+        }
+    }
+}
+
+.feature {
+    margin: 70px 0;
+
+    h2 {
+        margin-bottom: 60px;
+    }
+}
+ 
+//review
+.review {
+    margin-bottom: 100px;
+    
+    &-body {
+        width: 85%;
+        margin: auto;
+        overflow: hidden;
+
+        form {
+            position: relative;
+        }
+
+        .form-flex {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+
+            .input-50 {
+                width: 50%;
+              
+                input {
+                    width: 100%;
+                    @include set-backgound-color(lighten(rgb(233, 223, 223), 2%));
+                    border-radius: 20px;
+                    border: none;
+                    padding: 15px 20px;
+                    font-size: 17px;
+                }
+            }
+        }
+
+        ::placeholder {
+            font-size: 17px;
+        }
+
+        textarea {
+            width: 100%;
+            border-radius: 20px;
+            display: block;
+            @include set-backgound-color(lighten(rgb(233, 223, 223), 2%));
+            padding: 15px 10px;
+            border: none;
+            margin-top: 40px;
+            font-size: 18px;
+        }
+
+        input, textarea:focus {
+            outline: 0;
+        }
+        
+        button {
+            @include set-backgound-color($orange-color);
+            padding: 10px 30px;
+            font-size: 14px;
+            display: block;
+            margin: 30px 0;
+            border-radius: 13px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: lighten($orange-color, 5%);
+            }
+        }
+    }
+}
+
+//cart
+.cart {
+    margin: 200px 0 100px;
+    &-body{
+        width: 88%;
+        margin: auto;
+
+        .cart-title-flex {
+            display: flex;
+            justify-content: space-between;
+            @include set-backgound-color($orange-color);
+            padding: 7px;
+        }
+
+        .cart-details-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10px;
+            margin: 15px 0;
+
+           .cart-item {
+               display: flex;
+               align-items: center;
+               gap: 10px;
+
+               p {
+                   line-height: 1.4;
+               }
+
+               .danger {
+                   cursor: pointer;
+               }
+
+               img {
+                   width: 60px;
+                   height: 60px;
+                   background-color: lighten(rgb(205, 199, 199), 10%);
+                   padding: 4px;
+               }
+           } 
+        }
+    }
+}
+

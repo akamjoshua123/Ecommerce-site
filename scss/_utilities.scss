@@ -1,0 +1,46 @@
+.container {
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    border: 0;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+.orange {
+    color: $orange-color;
+}
+
+.glasses {
+    margin-bottom: 180px;
+}
+
+.black {
+    color: #000;
+}
+
+.danger {
+    color: red;
+}
+
+.msg {
+    position: absolute;
+    top: 19%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @include set-backgound-color($White-color);
+    font-size: 17px;
+    text-align: center;
+    padding: 4px 10px;
+    border-radius: 14px;
+}

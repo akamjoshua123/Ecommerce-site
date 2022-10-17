@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce Website</title>
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="header-flex">
+                <img src="img/ecommercelogo.png" alt="">
+                <nav>
+                    <ul class="menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html" class="orange">Products</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li class="bag"><a href="cart.html"><i class="fa fa-shopping-bag"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="hamburger" id="bar"><i class="fa fa-bars"></i></div>
+            </div>
+        </div>
+    </header>
+
+    <section class="first">
+        <div class="first-flex">
+            <div class="img-container">
+                <div class="img"><img src="img/yellow4.png" alt="" class="mainImg"></div>
+                <div class="imgs">
+                    <img src="img/yellow1.png" id="img" alt="">
+                    <img src="img/yellow2.png" id="img" alt="">
+                    <img src="img/yellow3.png" id="img" alt="">
+                    <img src="img/yellow5.png" id="img" alt="">
+                </div>
+            </div>
+
+            <div class="first-product-details">
+                <h1 class="black">New Printed Yellow T-shirt By Eshop</h1>
+                <div class="rate">
+                    <i class="fa fa-star orange"></i>
+                    <i class="fa fa-star orange"></i>
+                    <i class="fa fa-star orange"></i>
+                    <i class="fa fa-star orange"></i>
+                    <i class="fa fa-star orange"></i>
+                </div>
+                <p class="price">$87.00</p>
+                <select>
+                    <option selected disabled>Select Size</option>
+                    <option>Size 40</option>
+                    <option>Size 30</option>
+                    <option>Size 25</option>
+                    <option>Size 20</option>
+                </select>
+                <div class="first2-flex">
+                    <div class="input">
+                        <input type="number" value="1">
+                    </div>
+                    <div class="div"><button><a href="cart.html">Check Cart <i
+                                    class="fa fa-shopping-cart"></i></a></button></div>
+                </div>
+                <h3 class="black black1">PRODUCT DETAILS</h3>
+                <p class="line">Lastest yellow colored t-shirt product on eshop. Well, the product isn't that expensive, the price is been displayed above. Book Now! we have limited offers. Remember we are across the globe, you can do your shopping online from anywhere in the world through any payment platform. Always available</p>
+            </div>
+        </div>
+    </section>
+
+    <!--related product-->
+    <section class="feature">
+        <div class="feature-text">
+            <h2 class="rel">Related product</h2>
+        </div>
+        <div class="feature-container">
+            <div class="feature-flex">
+                <div class="box">
+                    <img src="img/purple4.png" alt="">
+                    <div class="rate">
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                    </div>
+                    <div class="feature-details">
+                        <p class="sport">Sports Trousers</p>
+                        <p>$54.36</p>
+                        <button id="cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/red3.png" alt="">
+                    <div class="rate">
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                    </div>
+                    <div class="feature-details">
+                        <p>Sports T-shirt</p>
+                        <p>$60.16</p>
+                        <button id="cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/green4.png" alt="">
+                    <div class="rate">
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                    </div>
+                    <div class="feature-details">
+                        <p>Sport T-shirt</p>
+                        <p>$29.76</p>
+                        <button id="cart">Add To Cart</button>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <img src="img/purple3.png" alt="">
+                    <div class="rate">
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                        <i class="fa fa-star orange"></i>
+                    </div>
+                    <div class="feature-details">
+                        <p>Sports Trousers</p>
+                        <p>$44.27</p>
+                        <button id="cart">Add To Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--review-->
+    <div class="review">
+        <div class="review-body">
+            <h2 class="black my-2">Add a Review</h2>
+            <form>
+                <div class="form-flex">
+                    <div class="input-50"><input class="input" type="text" placeholder="Name" id="text" required></div>
+                    <div class="input-50"><input class="input" type="text" placeholder="Email" id="email" required></div>
+                </div>
+                <textarea cols="20" rows="12" placeholder="Send your review"></textarea>
+                <div class="send"><button type="submit" class="sendBtn">Send <i class="fa fa-paper-plane"></i></button></div>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="simple-modal">
+        <div class="modal-body">
+            <div class="modal-header">
+                <h2>Start Shopping On Eshop</h2>
+                <span class="close">&times;</span>
+           </div>
+           <div class="modal-content">
+               <p class="p-1">Thank you for choosing to shop on Eshop. we provide you the best quality products for both male and female</p>
+           </div>
+           <div class="modal-footer">
+               <h2>Start Now Tomorrow might be too Late</h2>
+           </div>
+        </div>
+    </div>
+    <!--modal-->
+    <article class="added" id="add">
+        <div class="added-body">
+            <div class="modal-flex">
+                <i class="fa fa-check"></i>
+                <p class="selected"></p>
+                <button><a href="cart.html">View Cart</a></button>
+            </div>
+        </div>
+    </article>
+
+
+    <!--footer-->
+    <footer>
+        <div class="footer-grid">
+            <ul>
+                <div class="img mb"><img src="img/ecommercelogo.png" alt=""></div>
+                <p class="p-img">Rely on us to give you that best, quality and affordable product you deserve. Tested
+                    and trusted <i class="fa fa-check orange"></i><i class="fa fa-check orange"></i></p>
+            </ul>
+
+            <ul>
+                <h4>Quick Links</h4>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+
+            </ul>
+
+            <ul>
+                <h4 class="mb">Contact</h4>
+                <li><i class="fa fa-phone orange"></i>Phone: +234 706 583 3875</li>
+                <li><i class="fa fa-phone orange"></i>Phone: +234 803 367 4782</li>
+                <li><i class="fa fa-envelope orange"></i>Email: akamjoshua182@gmail.com</li>
+                <li><i class="fa fa-map-marker orange"></i>Location: 3, Makinde Aromokun, Lagos</li>
+            </ul>
+
+            <ul>
+                <h4 class="mb">Featured</h4>
+                <li>Women</li>
+                <li>Men</li>
+                <li>Girls</li>
+                <li>Boys</li>
+                <li>Headphone</li>
+                <li>Clothes</li>
+            </ul>
+        </div>
+        <div class="social-icons">
+            <i class="fa fa-facebook"></i>
+            <i class="fa fa-linkedin"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-comment-o"></i>
+            <i class="fa fa-instagram"></i>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
